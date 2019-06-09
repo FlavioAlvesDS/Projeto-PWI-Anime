@@ -1,0 +1,48 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+form{
+    font-size: 16px;
+    background-color: #484751;
+    max-width: 70%;
+    margin:0 auto;
+    padding: 10px 10px 10px 10px;
+
+}
+h1{
+    color: #000000;
+}
+h2{
+    padding-left: 25px;
+}
+input,textarea{
+    width: 90%;
+    padding: 10px;
+    margin: 30px;
+
+}
+.enviar input{
+    background-color: #3f729b;
+    height: 40px;
+    width: 30%;
+    margin: 30px auto;
+    font-weight: bold;
+    border-radius: 7px;
+    border: 1px solid;
+    color: white;
+    cursor: pointer;
+}
+.enviar input:hover{
+    background-color: #0084b4;
+}
+textarea{
+    width: 90%;
+    height: 200px;
+    line-height: 20px;
+
+}
+fieldset{
+    margin: 30px auto;
+    padding: 30px ;
+}

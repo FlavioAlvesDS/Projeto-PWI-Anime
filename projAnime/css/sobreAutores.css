@@ -1,0 +1,215 @@
+﻿*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("../img/fundo.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+@font-face{
+	font-family:njnaruto;
+	src:url(../fonts/njnaruto.ttf);
+
+}
+#container{
+    margin: auto;
+    width: 70%;
+    background-color: #8a8586;
+}
+#logo{
+    background: url("../img/logo.png");
+    background-color: black;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 250px;
+
+}
+#logo section{
+    margin-left:60%;
+}
+/*Estilizando a classe e as divs das midias sociais */
+.rede{
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+    transition: .4s ease-out;
+    border-radius: 50%;
+}
+.rede:hover{
+    cursor: pointer;
+    transform: translateY(-10px);
+    box-shadow: 2px 20px 14px 0px darkgray;
+}
+.rede#fabebook{
+    background-color: #2372a3;
+}
+.rede#twitter{
+    background-color: #0084b4;
+}
+.rede#instagram{
+    background-color: #3f729b;
+}
+.rede#snap{
+    background-color: #fc0;
+}
+.rede#plus{
+    background-color: #dd4b39;
+}
+.rede#youtube{
+    background-color: #b00;
+}
+.icone{
+    margin: 0px auto;
+    padding: 10px;
+    width: 50%;
+
+}
+/*Inicio da estilização do menu*/
+.menu{
+
+    width: 100%;
+    height: 87px;
+    margin-top:5px;
+    background-color: #7e7870;
+    font-family: Arial;
+}
+.menu ul{
+
+    list-style: none;
+    position: relative;
+}
+.menu ul li{
+
+    margin-top: 2px;
+    width: 19%;
+    float: left;
+}
+
+.menu a{
+
+    margin-left: 20px;
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-size:13pt;
+    font-family:'njnaruto', cursive;
+    background-color: #484751;
+    color: #fff;
+    border: 2px solid red;
+}
+/* fazendo a estilização do sub menu*/
+.menu ul ul{
+    position: absolute;
+    visibility: hidden;
+}
+.menu ul li ul li{
+    width: 100%;
+}
+/* fazendo o hover para o sub menu aparecer*/
+.menu ul li:hover ul {
+    visibility: visible;
+}
+.menu a:hover {
+    background-color: #c30625;
+    transform: translateY(-2px);
+    box-shadow: 4px 10px 16px 0px darkgray;
+
+}
+/*estilização do submenu*/
+.menu ul ul li{
+    float: none;
+
+}
+
+.menu ul ul li a {
+    background-color: #8d8d93;
+}
+.foto1{
+    background-image: url("../img/autores/TsugumiOhba.jpg");
+    background-size:100% 100%;
+    width: 40%;
+    height: 250px;
+    background-color: #7f7c93;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    float: left;
+	border-radius:10%;
+
+
+}
+.foto2{
+    background-image: url("../img/autores/TakeshiObata.jpg");
+    background-size:100% 100%;
+    width: 40%;
+    height: 250px;
+    background-color: #7f7c93;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    float: left;
+	border-radius:10%;
+
+}
+.conteudo{
+    width: 95%;
+    text-align: justify;
+    font-family: Century;
+    font-size: 15pt;
+    padding: 30px;
+
+}
+.texto{
+	padding:80px;
+	font-size:20pt;
+}
+p{
+	text-indent:50pt;
+}
+h1{
+	text-shadow:1px 1px red;
+	
+}
+/*estilização do rodapé */
+footer{
+    width: 100%;
+    height: 50px;
+    background-color: #c0bbe4;
+    padding-top: 30px;
+    font-size: 15pt;
+
+
+}
+
+/*estilização para ficar uma pagina responsiva*/
+@media (max-width: 1100px) {
+    .menu{
+        height: auto;
+    }
+    .menu ul li {
+        width: 100%;
+        float: none;
+    }
+    .menu ul ul {
+        position: static;
+        overflow: hidden;
+        max-height: 0;
+        transition: all .4s;
+    }
+    .menu ul li:hover ul{
+        height: auto;
+        max-height: 200px;
+    }
+    #logo section{
+        margin-left: 0px;
+    }
+    .texto{
+        width:80%;
+        padding:30px;
+        font-size:20pt;
+    }
+
+}

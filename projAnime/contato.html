@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de contato</title>
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <link rel="stylesheet" type="text/css" href="css/contato.css">
+
+</head>
+<body>
+
+    <div id="container">
+
+        <div id="logo">
+            <section>
+                <div class="rede" id="fabebook">
+                    <img class="icone" src="img/midiaSocial/facebook.png">
+                </div>
+                <div class="rede" id="twitter">
+                    <img class="icone" src="img/midiaSocial/twitter.png">
+                </div>
+                <div class="rede" id="instagram">
+                    <img class="icone" src="img/midiaSocial/instagram.png">
+                </div>
+                <div class="rede" id="snap">
+                    <img class="icone" src="img/midiaSocial/snap.png">
+                </div>
+                <div class="rede" id="plus">
+                    <img class="icone" src="img/midiaSocial/plus.png">
+                </div>
+                <div class="rede" id="youtube">
+                    <a href=""><img class="icone" src="img/midiaSocial/youtube.png"></a>
+                </div>
+            </section>
+
+
+        </div>
+
+        <nav class="menu">
+
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#">Historia</a>
+                    <ul>
+                        <li><a href="sobreAnime.html">Sobre o Anime</a></li>
+                        <li><a href="sobreAutor.html">Sobre os autores</a></li>
+                    </ul>
+                </li>
+                <li><a href="personagens.html">Personagens</a>
+                <li><a href="#"> Galeria </a>
+                    <ul>
+                        <li><a href="galeriaFotos.html">Fotos</a></li>
+                        <li><a href="Epsodios.html">Episodios</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="#contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="conteudo">
+            <form id="formContato" action="" method="post">
+                <h1>Contato</h1>
+                <fieldset>
+                <p class="nome">
+
+                    <h2>Nome:</h2>
+                    <input type="text" name="nome" placeholder="INFORME SEU NOME COMPLETO " required="required">
+                </p>
+                <p class="email">
+                    <h2>E-mail:</h2>
+                    <input type="email" name="email" placeholder="INFORME SEU E-MAIL " required="required">
+                </p>
+                <p class="assunto">
+                    <h2>Assunto:</h2>
+                    <input type="text" name="assunto" placeholder="INFORME O ASSUNTO " required="required">
+                </p>
+                <p class="msg">
+                   <h2>Mensagem:</h2>
+                    <textarea name="msg" placeholder="DEIXE AQUI SUA MENSAGEM" required="required"></textarea>
+                    </p>
+
+                <p class="enviar">
+                    <input type="submit" name="Enviar" value="Enviar">
+                </p>
+                </fieldset>
+            </form>
+        </div>
+        <footer>
+            Copyright&#169; <i>Desenvolvimento Acadêmico 2019 - Etec Jardin Angêla - Flavio Alves / Gabriel Tavares</i>
+        </footer>
+
+    </div>
+</body>
+</html>
