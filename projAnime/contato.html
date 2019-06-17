@@ -5,7 +5,7 @@
     <title>Formulario de contato</title>
     <link rel="stylesheet" type="text/css" href="css/home.css">
     <link rel="stylesheet" type="text/css" href="css/contato.css">
-
+	
 </head>
 <body>
 
@@ -58,30 +58,101 @@
             </ul>
         </nav>
         <div class="conteudo">
-            <form id="formContato" action="" method="post">
+            <form id="formContato" name="form1" action="" method="">
+				<section class="gif1"></section>
+				<section class="gif0"></section>
                 <h1>Contato</h1>
                 <fieldset>
                 <p class="nome">
 
                     <h2>Nome:</h2>
-                    <input type="text" name="nome" placeholder="INFORME SEU NOME COMPLETO " required="required">
+                    <input type="text" name="nome" placeholder="INFORME SEU NOME COMPLETO ">
                 </p>
                 <p class="email">
                     <h2>E-mail:</h2>
-                    <input type="email" name="email" placeholder="INFORME SEU E-MAIL " required="required">
+                    <input type="email" name="email" placeholder="INFORME SEU E-MAIL ">
                 </p>
                 <p class="assunto">
                     <h2>Assunto:</h2>
-                    <input type="text" name="assunto" placeholder="INFORME O ASSUNTO " required="required">
+                    <input type="text" name="assunto" placeholder="INFORME O ASSUNTO ">
                 </p>
                 <p class="msg">
                    <h2>Mensagem:</h2>
-                    <textarea name="msg" placeholder="DEIXE AQUI SUA MENSAGEM" required="required"></textarea>
+                    <textarea name="msg" placeholder="DEIXE AQUI SUA MENSAGEM" ></textarea>
                     </p>
 
                 <p class="enviar">
-                    <input type="submit" name="Enviar" value="Enviar">
+                    <button onclick="enviar1()">Enviar</button>
                 </p>
+				<script language="javascript" type="text/javascript">
+					function enviar1() {
+					var nome = form1.nome.value;
+					var email = form1.email.value;
+					var assunto = form1.assunto.value;
+					var msg = form1.msg.value;
+					
+						if (nome == "") {
+						alert('Preencha o campo com seu nome');
+						form1.nome.focus();
+						return false;
+						
+						}
+						if (nome.length < 7) {
+						alert('Digite seu nome completo');
+						form1.nome.focus();
+						return false;
+						
+						}
+						if (email == "") {
+						alert('Preencha o campo com seu email');
+						form1.email.focus();
+						return false;
+						
+						}
+						if (assunto == "") {
+						alert('Preencha o campo Assunto');
+						form1.assunto.focus();
+						return false;
+						
+						}
+						if (msg == "") {
+						alert ("Preencha o campo Mensagem");
+						form1.msg.focus();
+						return false;
+						}
+						else{
+						alert("Mensagem enviada com sucesso!!!");
+						window.location.assign("home.html");
+						}
+						
+										
+					}
+					
+
+				</script>
+				<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+				<script type="text/javascript">
+				$(document).ready(function(){
+					$('#formContato').submit(function(){
+						var dados = $( this ).serialize();
+
+						$.ajax({
+							type: "POST",
+							url: "contato.html",
+							data: dados,
+							dataType: "HTML",
+							success: function( data )
+							{
+								alert( data );
+							}
+							
+						});
+
+						return false;
+					});
+				});
+				</script>
+				
                 </fieldset>
             </form>
         </div>

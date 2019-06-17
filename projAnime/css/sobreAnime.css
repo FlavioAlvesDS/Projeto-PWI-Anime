@@ -138,13 +138,14 @@ body{
     background-color: #8d8d93;
 }
 .gif01{
-    background-image: url("../img/gif/logo.gif");
+    background-image: url("../img/gif/logo3.gif");
     background-size:100% 100%;
     width:100%;
     height: 300px;
     background-color: #7f7c93;
     margin: 30px auto;
     float: left;
+	margin-top: -15%;
 
 }
 .conteudo{
@@ -162,23 +163,23 @@ body{
 }
 p{
 	text-indent:50pt;
+	font-size: 22px;
 }
 h1{
 	text-shadow:1px 1px red;
     text-align: center;
-    font-size: 100pt;
+    font-size: 60px;
     font-family: 'deathnote', cursive;
 	
 }
 /*estilização do rodapé */
 footer{
     width: 100%;
-    height: 50px;
-    background-color: #c0bbe4;
-    padding-top: 30px;
+    height: 40px;
+    background-color: black;
+    padding-top: 8px;
     font-size: 15pt;
-
-
+    color: white;
 }
 
 /*estilização para ficar uma pagina responsiva*/

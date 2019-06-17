@@ -21,7 +21,7 @@ body{
     background-color: #8a8586;
 }
 #logo{
-    background: url("../img/gif/logo.gif");
+    background: url("../img/gif/logo5.gif");
     background-color: black;
     background-size: 100% 100%;
     width: 100%;
@@ -33,11 +33,11 @@ body{
 }
 /*Estilizando a classe e as divs das midias sociais */
 .rede{
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     float: left;
-    margin-left: 15px;
-    margin-top: 15px;
+    margin-left: 25px;
+    margin-top: 20px;
     transition: .4s ease-out;
     border-radius: 50%;
 }
@@ -134,7 +134,7 @@ body{
 
 .conteudo{
     width: 100%;
-    height:2500px;
+    height:2800px;
     background-color: #8d8d93;
    padding-top: 50px;
 
@@ -176,7 +176,7 @@ body{
 
 .min{
     width: 40%;
-    height: 40%;
+    height: 30%;
     border-radius: 20%;
     margin: 4%;
     position: relative;
@@ -217,10 +217,11 @@ body{
 /*estilização do rodapé */
 footer{
     width: 100%;
-    height: 50px;
-    background-color: #c0bbe4;
-    padding-top: 30px;
+    height: 40px;
+    background-color: black;
+    padding-top: 8px;
     font-size: 15pt;
+    color: white;
 
 
 }
